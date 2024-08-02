@@ -41,7 +41,7 @@ export const DeleteButton: FC<Props> = memo(
     };
     return (
       <StyledButton onClick={onClickHandler} disabled={disabled || disable}>
-        <img src="/trash.svg" alt="trash" />
+        <img src="/meters/trash.svg" alt="trash" />
       </StyledButton>
     );
   }

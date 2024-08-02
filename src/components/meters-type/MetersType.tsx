@@ -17,14 +17,14 @@ export const MetersType: FC<Props> = memo(({ type }) => {
       case 'ColdWaterAreaMeter':
         return (
           <>
-            <img src="/cold-water.svg" alt="cold" />
+            <img src="/meters/cold-water.svg" alt="cold" />
             <span>XBC</span>
           </>
         );
       case 'HotWaterAreaMeter':
         return (
           <>
-            <img src="/hot-water.svg" alt="hot" />
+            <img src="/meters/hot-water.svg" alt="hot" />
             <span>ГBC</span>
           </>
         );
