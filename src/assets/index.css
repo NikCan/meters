@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Стили для браузеров на движке WebKit (например, Chrome, Safari) */
+.webkit {
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: rgba(248, 249, 250, 1);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: rgba(94, 102, 116, 0.5);
+    border-radius: 4px; /* Округление бегунка */
+  }
+}
+
+/* Стили для остальных браузеров */
+.others_browsers {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(94, 102, 116, 0.5) rgba(248, 249, 250, 1);
+  /* Стили для всех потомков элементов с классом .others_browsers */
+  * {
+    scrollbar-width: thin;
+  scrollbar-color: rgba(94, 102, 116, 0.5) rgba(248, 249, 250, 1);
+  }
+}
